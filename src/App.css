@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Titan+One&display=swap');
+
+
+/* start general */
+
+:root {
+  --first-color: #0d6efd;
+  --second-color: #00FFF6;
+  --white-color: #fff;
+  --black-color: #212529;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titan One', cursive;
+  overflow-x: hidden;
+  background-color: var(--white-color);
+}
+
+.general-font {
+  color: var(--white-color);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  word-spacing: 0.1rem;
+}
+
+/* end general */
+
+/* ************************** */
+
+/* start nav */
+
+.navbar-nav .nav-link {
+  color: var(--white-color);
+  box-shadow: 0px 0px 5px var(--second-color);
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  color: var(--second-color);
+  box-shadow: 0px 0px 30px var(--second-color);
+  transition: color .30s ease-in-out, background-color .30s ease-in-out, border-color .30s ease-in-out, box-shadow .30s ease-in-out;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--second-color);
+}
+
+/* end nav */
+
+/* Start hero students */
+
+.hero-text {
+  height: 100vh;
+  background-image: url(./images/Book-background.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hero-text h1 {
+  height: 100px;
+  color: var(--first-color);
+  grid-row: 2;
+  grid-column: 1/5;
+  align-self: flex-end;
+  font-weight: bold;
+  backdrop-filter: blur(10px) brightness(100%);
+}
+/* Start hero students */
+
+/* Start Card students */
+
+.card {
+  box-shadow: 0px 0px 10px var(--second-color);
+  margin-top: 50px;
+  background-color: var(--first-color);
+}
+
+.card-font {
+  color: var(--white-color);
+  font-size: 15px;
+}
+
+.card-img {
+  border-radius: 10px;
+  border: 2px solid rgb(232, 232, 232);
+  width: 250px;
+  height: 250px;
+}
+
+/* End Card students */
+
+/* Start footer students */
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  color: var(--white-color);
+}
+/* End footer students */
+
+
+
+@media (max-width: 767px) {
+  .navbar-nav li{
+      margin-top: 8px;
+      margin-bottom: 4px;
+      text-align: center;
+  }
+
+  .logo {
+      display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-nav li{
+     font-size: 10px;
+     font-weight: 900;
+  }
+}
