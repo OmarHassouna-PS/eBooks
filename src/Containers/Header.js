@@ -71,7 +71,7 @@ export default function Header() {
       </header>
 
       <div className='hero-text'>
-        <h1>Welcome, here you will explore all the tourist sites in Jordan</h1>
+        <h1>Welcome to our book display site! Browse our collection of books on a variety of topics and find your next great read.</h1>
       </div>
 
     </>
