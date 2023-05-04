@@ -9,7 +9,6 @@ export default function Header() {
 
   function handleChange(event) {
     setValue(event.target.value);
-    console.log(event.target.value)
   }
 
   return (
